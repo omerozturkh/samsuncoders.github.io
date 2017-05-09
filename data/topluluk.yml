@@ -1,0 +1,29 @@
+users:
+  - muratbsts:
+    name: Murat Bastas
+    title: Yazılım Geliştirici
+    company: omg!medya
+    email: "muratbsts@gmail.com"
+    website: "http://muratbt.me"
+    social:
+      github: "https://github.com/muratbsts"
+      twitter: "https://twitter.com/muratbastas"
+      linkedin: "https://linkedin.com/in/muratbastas"
+
+  - tanertombas:
+    name: Taner Tombas
+    title: Web Geliştirici
+    company: Delta Ajans
+    email: "tombastaner@gmail.com"
+    social:
+      github: "https://github.com/TanerTombas"
+      twitter: "https://twitter.com/tanertombass"
+
+  - omfaer:
+    name: Omer Faruk Er
+    title: Bilgisayar Mühendisi
+    company: Uzem
+    email: "omfaer.ce@gmail.com"
+    social:
+      github: "https://github.com/omfaer"
+      twitter: "https://twitter.com/omfaer"

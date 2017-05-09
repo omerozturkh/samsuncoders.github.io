@@ -1,0 +1,161 @@
+$container-width: 960px;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext');
+
+body {
+  color: #3f3f3f;
+  font-family: 'Roboto', sans-serif;
+  line-height: 180%;
+}
+
+a {
+  color: #3f3f3f;
+  transition: color .2s;
+
+  &:focus,
+  &:hover {
+    color: #000;
+  }
+}
+
+.katil-box {
+  text-align: center;
+  margin: 0 0 2em;
+}
+
+a.katil-button {
+  display: inline-block;
+  padding: 1em 2em;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  background: #3f3f3f;
+  color: #fff;
+  box-shadow: rgba(0,0,0,0.2) 0 6px 18px;
+  transition: all .2s;
+
+  &:focus,
+  &:hover {
+    background: #000;
+  }
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  max-width: $container-width;
+  margin: 10vh auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  a {
+    text-decoration: none;
+  }
+
+  a.logo {
+    font-size: 2.3em;
+    font-weight: bold;
+    span {
+      animation: 1s blink step-end infinite;
+    }
+    @keyframes "blink" {
+      from, to {
+        color: transparent;
+      }
+      50% {
+        color: #3f3f3f;
+      }
+    }
+  }
+
+  nav {
+    a {
+      display: inline-block;
+      padding: .3em 1em;
+      border: 1px solid #000;
+      border-radius: 4px;
+      transition: all .2s;
+
+      &:hover {
+        background: #000;
+        color: #fff;
+        box-shadow: rgba(0,0,0,0.2) 0 6px 18px;
+      }
+    }
+  }
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+
+  p {
+    padding: 0 0 1em 0;
+  }
+
+  .users {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    > li {
+      width: 25%;
+      text-align: center;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        transition: all .5s;
+      }
+
+      strong {
+        display: block;
+        padding: .8em;
+      }
+
+      &:hover img {
+        box-shadow: rgba(0,0,0,0.2) 0 6px 18px;
+      }
+
+      > ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        > li {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          margin-right: 5px;
+          border-radius: 50%;
+          background: #3f3f3f;
+          &:last-child { margin-right: 0; }
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  max-width: $container-width;
+  margin: 10vh auto;
+  border-top: 1px solid #eee;
+  padding: 1em;
+  text-align: center;
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "Middleman" %></title>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+    <%= yield_content :assets %>
+  </head>
+  <body>
+    <header id="site-header">
+
+      <a href="/" class="logo">
+        <%#= image_tag 'ataturk.svg' %>
+        SamsunCoders<span>I</span>
+      </a>
+      <nav>
+        <a href="/topluluk">Topluluk</a>
+        <a href="https://groups.google.com/forum/#!forum/samsun-coders" target="_blank">Forum</a>
+        <a href="https://samsuncoders.slack.com/shared_invite/MTgxMTAyNDAxNjM3LTE0OTQzNTU2MzctYzMyNjFhZTFjNg" target="_blank">Slack</a>
+      </nav>
+
+    </header>
+
+    <div class="container">
+
+      <div class="katil-box">
+        <a class="katil-button" target="_blank" href="https://goo.gl/forms/sZXtwMozxrzBfVjH3">KATILIM FORMU</a>
+      </div>
+
+      <%= yield %>
+
+    </div>
+
+    <footer>
+      &copy; <%= Time.now.year %> - SamsunCoders
+    </footer>
+  </body>
+</html>

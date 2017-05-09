@@ -1,0 +1,23 @@
+---
+title: "Topluluk"
+---
+
+<% content_for :assets do %>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<% end %>
+
+<ul class="users">
+
+  <% data.topluluk.users.each_with_index do |user, index| %>
+    <li class="user">
+      <%= image_tag gravatar_for user.email %>
+      <strong><%= user.name %></strong>
+      <ul class="links">
+        <% user.social.each do |link| %>
+          <li><%= link_to icon_for(link[0]), link[1], target: '_blank' %></li>
+        <% end %>
+      </ul>
+    </li>
+  <% end %>
+
+</ul>
