@@ -27,3 +27,12 @@ users:
     social:
       github: "https://github.com/omfaer"
       twitter: "https://twitter.com/omfaer"
+
+  - uykalkan:
+    name: Umit Yasar Kalkan
+    title: Web Geliştirici
+    company: Annedukkan
+    email: "uykalkan@gmail.com"
+    social:
+      github: "https://github.com/uykalkan"
+      twitter: "https://twitter.com/uykalkan"

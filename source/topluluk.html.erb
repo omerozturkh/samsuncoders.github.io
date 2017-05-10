@@ -15,7 +15,7 @@ title: "SamsunCoders Topluluğu"
   <% data.topluluk.users.each_with_index do |user, index| %>
     <li class="user">
       <%= image_tag gravatar_for user.email %>
-      <strong><%= user.name %></strong>
+      <strong><%= user.name %><br><small style="font-weight: normal"><%= user.company %></small></strong>
       <ul class="links">
         <% user.social.each do |link| %>
           <li><%= link_to icon_for(link[0]), link[1], target: '_blank' %></li>
