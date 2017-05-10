@@ -36,3 +36,28 @@ users:
     social:
       github: "https://github.com/uykalkan"
       twitter: "https://twitter.com/uykalkan"
+
+  - kamilkeles:
+    name: Kamil Keles
+    title:
+    company: 112 Dijital
+    email: "kamilkelees@gmail.com"
+    social:
+      github: "https://github.com/kamilkeles"
+
+  - omerozturkh:
+    name: Omer Ozturk
+    title: Web Gelistirici
+    company: EFT Software
+    email: "omerozturkh@gmail.com"
+    social:
+      github: "https://github.com/omerozturkh"
+      twitter: "https://twitter.com/omerozturkh"
+
+  - SametGules:
+    name: Samet Gules
+    title:
+    company: Delta Ajans
+    email: "sametgules@gmail.com"
+    social:
+      github: "https://github.com/SametGules"

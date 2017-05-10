@@ -11,7 +11,7 @@ page '/topluluk'
 helpers do
   def gravatar_for(email)
     hash = Digest::MD5.hexdigest(email.chomp.downcase)
-    "//www.gravatar.com/avatar/#{hash}?s=200"
+    "//www.gravatar.com/avatar/#{hash}?s=200&d=monsterid"
   end
 
   def icon_for(icon)
